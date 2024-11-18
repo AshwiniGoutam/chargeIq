@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: transparent;
+    position: relative;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease
+}
+
+.header-scrolled{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: background-color 0.3s ease
+}
+
+.header-scrolled ul li a{
+    color: black;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:768px){
+    header ul{
+        display: none;
+    }
+
+    header .primary-btn{
+        display: none;
+    }
+}

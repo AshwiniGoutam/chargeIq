@@ -1,0 +1,19 @@
+.subtext-section {
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.subtext-section span {
+    position: relative;
+    font-size: 24px !important;
+}
+
+.subtext-section span::before {
+    content: '';
+    height: 3px;
+    width: 50%;
+    background-color: #41CB5A;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+}

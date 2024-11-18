@@ -1,0 +1,24 @@
+.progress-bar-section{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.progress-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-section p{
+    margin-bottom: 10px;
+}
+
+.progress{
+    height: 5px;
+}
+
+.progress-bar{
+    background-color: #41CB5A;
+}

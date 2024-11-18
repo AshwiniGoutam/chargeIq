@@ -1,0 +1,247 @@
+.home-banner-section {
+    height: 600px;
+}
+
+.home-banner-section::after {
+    content: "";
+    background-image: url('../../../public/assets/images/Banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -100px;
+    height: 862px;
+    left: 0;
+    right: 0;
+}
+
+.home-banner-section::before {
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: -100px;
+    z-index: 1;
+    height: 862px;
+    left: 0;
+    right: 0;
+}
+
+.home-banner-section .container {
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-banner-section .container h1 {
+    font-size: 64px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.home-banner-section .container p {
+    color: white;
+    text-align: center;
+}
+
+.about-us-section {
+    margin: 130px 0 60px 0;
+    position: relative;
+}
+
+.about-us-section::after {
+    content: url('../../../public/assets/images/about-bg-img.png');
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.about-us-section img[alt='circle-img'] {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+
+.about-us-section img[alt='about-img'] {
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+.about-us-section h2 {
+    margin-bottom: 20px;
+}
+
+.services-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.services-section .row {
+    margin-top: 50px;
+}
+
+.who-we-are-section {
+    padding: 120px 0;
+    background-image: url('../../../public/assets/images/Who-we-are-bg-image.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.who-we-are-section::before {
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.who-we-are-section .container {
+    z-index: 9;
+    position: relative;
+}
+
+.who-we-are-section a {
+    width: fit-content !important;
+}
+
+.who-we-are-section h2 {
+    margin-top: 20px;
+}
+
+.who-we-are-section .col-sm-12:first-child p {
+    margin-top: 25px !important;
+    margin-bottom: 25px;
+}
+
+.who-we-are-section h2,
+.who-we-are-section .subtext-section span,
+.who-we-are-section p {
+    color: white;
+}
+
+.counter-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.counter-section h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 40px !important;
+}
+
+.featured-section {
+    padding: 60px 0;
+}
+
+.featured-section .row{
+    margin-top: 50px;
+}
+
+.featured-section .row .col-sm-12{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.featured-section .feature-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.featured-section .feature-div h4{
+    margin: 0 !important;
+}
+
+.featured-section .feature-div img {
+    background-color: #41CB5A;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pricing-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.pricing-section .row{
+    margin-top: 50px;
+}
+
+/* .why-choose-us-section{
+    padding: 60px 0;
+} */
+
+.why-choose-us-section .half-section{
+    width: 50%;
+}
+
+.why-choose-us-section .half-section:first-child{
+    background-image: url('../../../public/assets/images/Why-choose-us-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.why-choose-us-section .half-content-section{
+    background-image: url('../../../public/assets/images/home-1-bg-shape.png');
+    background-color: rgb(45, 45, 45);
+    padding: 60px;
+    height: 100vh;
+    color: white;
+    margin: auto;
+}
+
+.testimonial-section{
+    padding: 60px 0;
+}
+
+.testimonial-section .description{
+    margin-top: 20px;
+}
+
+.testimonial-section .col-sm-12:first-child{
+    padding-left: 7.5%;
+}
+
+.faq-section{
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.faq-section .row{
+    margin-top: 50px;
+}
+
+@media (max-width:768px){
+    .home-banner-section .container h1{
+        font-size: 32px;
+    }
+    .about-us-section img[alt='about-img']{
+        width: 100%;
+    }
+    .about-us-section img[alt='circle-img']{
+        display: none;
+    }
+    .counter-section{
+        flex-wrap: wrap;
+    }
+
+    .why-choose-us-section .half-section{
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.testimonial-section .card {
+    background-color: #fafafa;
+    border-bottom: 2px solid #41CB5A;
+}
+
+.testimonial-section .card:hover p {
+    color: black;
+}
+
+.testimonial-section .card:hover img {
+    mix-blend-mode: normal;
+}
+
+.testimonial-section .card .star-img {
+    width: 20px;
+}
+
+.testimonial-section .card .user-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-section .card .user-div img {
+    border-radius: 100px;
+}
+
+.testimonial-section .card .user-div h5 {
+    font-size: 16px;
+}
+
+.testimonial-section .card .user-div p {
+    font-size: 12px;
+}
+
+.testimonial-section .card p,
+.testimonial-section .card h5 {
+    margin-bottom: 0;
+}
+
+.testimonial-section .custom-nav{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.testimonial-section .custom-nav .custom-prev {
+    background: #41CB5A;
+    border-radius: 100px;
+    padding: 6px;
+    border: none;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.testimonial-section .custom-nav .custom-next {
+    background: #41CB5A;
+    border-radius: 100px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonial-section .custom-nav .custom-prev img, .testimonial-section .custom-nav .custom-next img{
+    width: 36px;
+}

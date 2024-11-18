@@ -1,0 +1,51 @@
+.card {
+    border: none;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-color: #41CB5A;
+}
+
+.card:hover a,
+.card:hover h4,
+.card:hover p {
+    color: white;
+}
+
+.card:hover a img{
+    margin-left: 5px;
+}
+
+.card:hover img {
+    mix-blend-mode: difference;
+}
+
+.card img {
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.card a {
+    text-decoration: none;
+    color: #41CB5A;
+    display: flex;
+    align-items: center;
+}
+
+.card a svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.card:hover svg{
+    fill: white;
+    stroke: white;
+}

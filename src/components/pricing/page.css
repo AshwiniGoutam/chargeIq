@@ -1,0 +1,57 @@
+.pricing-section .card {
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.pricing-section .card:hover {
+    background-color: white !important;
+    border: 1px solid #41CB5A;
+}
+
+.pricing-section .card:hover p, .pricing-section .card:hover h4{
+    color: black;
+}
+
+.pricing-section .card:hover svg{
+    fill: #41CB5A;
+}
+
+.pricing-section .card .pricing {
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.pricing-section .card .pricing span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.pricing-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-section ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-section ul svg {
+    width: 20px;
+    stroke: #41CB5A;
+    fill: #41CB5A;
+}
+
+section.pricing-section .primary-btn {
+    text-align: center !important;
+    justify-content: center;
+    transition: 1s !important;
+}
+
+/* .pricing-section:hover .primary-btn {
+    background: white !important;
+    color: #41CB5A;
+} */
