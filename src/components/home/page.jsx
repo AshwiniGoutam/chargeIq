@@ -24,7 +24,7 @@ export default function Home() {
         <>
             <Header />
 
-            <section className='home-banner-section'>
+            <section className='home-banner-section' id='home'>
                 <div className="container">
                     <h1 data-aos="fade-up"
                         data-aos-duration="1000">Unleashing Sustainable Energy Soutions</h1>
@@ -33,12 +33,13 @@ export default function Home() {
                         Our solutions are designed to reduce your carbon footprint.
                         <span className="d-block"> Experience reliable, eco-friendly charging anytime, anywhere.
                             Join the movement towards a greener, smarter future.</span></p>
+                            {/* <h4>Discover   |   Charge   |   Pay</h4> */}
                     <a href="#" className='primary-btn' data-aos="fade-up"
                         data-aos-duration="3000">Learn more <img src="../../assets/images/arrow.svg" alt="" /></a>
                 </div>
             </section>
 
-            <section className="about-us-section">
+            <section className="about-us-section" id='about-us'>
                 <div className="container">
                     <div className="row row-gap-4 align-items-center overflow-hidden">
                         <div className="col-sm-12 col-md-6 col-lg-6" >
@@ -58,7 +59,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="services-section">
+            <section className="services-section" id='services'>
                 <div className="container">
                     <div className="d-flex align-items-center justify-content-between flex-wrap" data-aos="fade-up"
                         data-aos-duration="3000">
@@ -170,7 +171,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="testimonial-section">
+            <section className="testimonial-section" id='testimonials'>
                 <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-sm-12 col-md-12 col-lg-6">

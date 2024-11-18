@@ -47,6 +47,11 @@
     text-align: center;
 }
 
+.home-banner-section h4{
+    color: white;
+    margin: 10px 0 40px 0;
+}
+
 .about-us-section {
     margin: 130px 0 60px 0;
     position: relative;

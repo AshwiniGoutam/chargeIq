@@ -36,10 +36,10 @@ export default function Header() {
             </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blogs</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
             </ul>
 
             <a href="#" className='primary-btn'>Contact Us  <img src="../../assets/images/arrow.svg" alt="" /></a>
