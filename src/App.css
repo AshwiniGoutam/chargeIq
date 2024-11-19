@@ -16,6 +16,10 @@ h2 span{
   font-weight: 600;
 }
 
+.w-fit{
+  width: fit-content !important;
+}
+
 .primary-color{
   color: #01B763;
   text-decoration: none;

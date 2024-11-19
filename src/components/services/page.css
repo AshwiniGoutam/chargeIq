@@ -49,3 +49,7 @@
     fill: white;
     stroke: white;
 }
+
+.card:hover ul li{
+    color: white;
+}

@@ -232,6 +232,10 @@
     margin-top: 50px;
 }
 
+.explore-solutions{
+    padding: 60px 0;
+}
+
 @media (max-width:768px){
     .home-banner-section .container h1{
         font-size: 32px;
