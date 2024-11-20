@@ -1,6 +1,6 @@
 .card {
     border: none;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -52,4 +52,5 @@
 
 .card:hover ul li{
     color: white;
+    font-size: 14px;
 }

@@ -28,26 +28,47 @@ export default function Home() {
       <section className="home-banner-section" id="home">
         <div className="container">
           <h1 data-aos="fade-up" data-aos-duration="1000">
-            Powering Seamless EV Journeys
+            Powering Seamless{" "}
+            <span>
+              <span>EV Networks</span>
+              <span>EV Fleets Owners</span>
+              <span>EV Users</span>
+              <span>EV Journeys</span>
+            </span>
           </h1>
           <p data-aos="fade-up" data-aos-duration="2000">
             Connected Charging Solutions for EV Networks, EV Fleets Owners, and
             EV Users
-            <span className="d-block">
+            {/* <span className="d-block">
               {" "}
               Our Mission: Driving India Towards Greener Mobility by Uniting the
               EV Charging Ecosystem
-            </span>
+            </span> */}
           </p>
           {/* <h4>Discover   |   Charge   |   Pay</h4> */}
-          <a
+
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <h4>Download the app now</h4>
+
+            <div className="download-btns">
+              <a href="#">
+                <img src="../../assets/images/apple.svg" alt="apple" />
+              </a>
+              <span>|</span>
+              <a href="#">
+                <img src="../../assets/images/playstore.png" alt="playStore" />
+              </a>
+            </div>
+          </div>
+          {/* <a
             href="#"
             className="primary-btn"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            Learn more <img src="../../assets/images/arrow.svg" alt="" />
-          </a>
+            Explore Solutions leading to Solutions module{" "}
+            <img src="../../assets/images/arrow.svg" alt="" />
+          </a> */}
         </div>
       </section>
 
@@ -73,22 +94,28 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <SubText text="About Us" />
-              <h2>We Provide Best Car Charging Experiences.</h2>
+              <SubText text="About" />
+              <h2>Empowering the Future of Electric Mobility</h2>
               <p>
-                Experience the ultimate in convenience and reliability with our
-                top-tier car charging solutions. We offer fast, efficient, and
-                eco-friendly charging to keep you on the road with peace of
-                mind. Trust us for the best charging experience, anytime and
-                anywhere.
+                At ChargIQ, we are redefining the EV charging experience by
+                delivering innovative, end-to-end solutions for seamless
+                electric journeys. Our platforms combine cutting-edge technology
+                with unmatched reliability to power EV users, fleets, and
+                networks with confidence.
               </p>
+
+              <p className="">
+                Join us in building a smarter, greener future—one charge at a
+                time.
+              </p>
+
               <AboutAccordion />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="services-section" id="services">
+      {/* <section className="services-section" id="features">
         <div className="container">
           <div
             className="d-flex align-items-center justify-content-between flex-wrap"
@@ -96,30 +123,106 @@ export default function Home() {
             data-aos-duration="3000"
           >
             <div>
-              <SubText text="Our Services" />
-              <h2>ChargIQ: The Ultimate App for <span className="d-block">All Your EV Charging Needs</span></h2>
+              <SubText text="Features" />
+              <h2>
+                ChargIQ: The Ultimate App for{" "}
+                <span className="d-block">All Your EV Charging Needs</span>
+              </h2>
               <p>
                 Stay Powered Anywhere, Anytime – Simplify EV Charging with
                 India’s Leading Chargepoint Aggregator
               </p>
             </div>
-
-            <a href="#" className="primary-color">
-              See All{" "}
-              <img
-                src="../../assets/images/service-arrow.svg"
-                alt="arrow"
-                style={{ width: "30px" }}
-              />
-            </a>
           </div>
           <div className="row row-gap-4">
             <Services />
           </div>
         </div>
+      </section> */}
+
+      <section className="featured-section" id="features">
+        <div className="container">
+          <SubText
+            text="Features"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <h2 data-aos="fade-up" data-aos-duration="1000">
+            ChargIQ: Your Ultimate EV{" "}
+            <span className="d-block">Charging Solution</span>
+          </h2>
+          <p>
+            Stay Powered Anywhere, Anytime – Simplify EV Charging with India’s
+            Leading Chargepoint Aggregator
+          </p>
+
+          <div className="row align-items-center overflow-hidden row-gap-4">
+            <div
+              className="col-sm-12 col-md-6 col-lg-3"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div className="feature-div">
+                <img src="../../assets/images/feature-icon1.png" alt="" />
+                <h4>Easily Find and Access Chargepoints</h4>
+                <p>
+                  Discover nearby chargepoints, with roaming access and vehicle
+                  connector filters for both two-wheelers and four-wheelers.
+                </p>
+              </div>
+              <div className="feature-div">
+                <img src="../../assets/images/feature-icon3.png" alt="" />
+                <h4>Secure Payments and Effortless Charging </h4>
+                <p>
+                  Pay securely via UPI, cards, or ChargIQ Wallet, track
+                  sessions, and access chargepoints instantly with QR code
+                  scanning.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div>
+                <img
+                  src="../../assets/images/car-charging-img.png"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
+
+            <div
+              className="col-sm-12 col-md-6 col-lg-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <div className="feature-div">
+                <img src="../../assets/images/feature-icon2.png" alt="" />
+                <h4>AI-Optimized Trip Planner </h4>
+                <p>
+                  Get AI-driven charging stop suggestions to save time, cost,
+                  and reduce range anxiety.
+                </p>
+              </div>
+              <div className="feature-div">
+                <img src="../../assets/images/feature-icon4.png" alt="" />
+                <h4>Customizable Charging Settings</h4>
+                <p>
+                  Set goals by percentage, duration, or amount, and tailor trip
+                  planning with vehicle specs for a smarter, stress-free EV
+                  experience. Download now!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section className="explore-solutions">
+      <section className="explore-solutions" id="explore-solutions">
         <div className="container">
           <SubText text="Explore Solutions" />
           <div className="row" data-aos="fade-up" data-aos-duration="3000">
@@ -151,10 +254,13 @@ export default function Home() {
               </a> */}
 
               {/* <SubText text="Who We Are" /> */}
+              <img src="../../assets/images/logo.png" alt="" width="150px" />
               <h2>One App for All Your EV Charging Needs</h2>
               <p>
-                Join thousands of EV owners from top brands who trust ChargIQ to
-                power their journeys.
+                Join thousands of EV owners from top brands who trust{" "}
+                <span className="d-block">
+                  ChargIQ to power their journeys.
+                </span>
               </p>
               <a href="#" className="primary-btn">
                 Download ChargIQ Now
@@ -163,81 +269,6 @@ export default function Home() {
             </div>
             <div className="col-sm-12 col-md-6- col-lg-6">
               <CounterSection />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="featured-section">
-        <div className="container">
-          <SubText
-            text="Our Features"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          />
-          <h2 data-aos="fade-up" data-aos-duration="1000">
-            Key Features of Energox <span className="d-block">EV Charging</span>{" "}
-          </h2>
-
-          <div className="row align-items-center overflow-hidden">
-            <div
-              className="col-sm-12 col-md-6 col-lg-3"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <div className="feature-div">
-                <img src="../../assets/images/feature-icon1.png" alt="" />
-                <h4>High Quality</h4>
-                <p>
-                  Duis aute irure dolor in repren in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div className="feature-div">
-                <img src="../../assets/images/feature-icon3.png" alt="" />
-                <h4>Global Compatibility</h4>
-                <p>
-                  Duis aute irure dolor in repren in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="col-sm-12 col-md-6 col-lg-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div>
-                <img
-                  src="../../assets/images/car-charging-img.png"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-            </div>
-
-            <div
-              className="col-sm-12 col-md-6 col-lg-3"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              <div className="feature-div">
-                <img src="../../assets/images/feature-icon2.png" alt="" />
-                <h4>Easy Process </h4>
-                <p>
-                  Duis aute irure dolor in repren in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
-              <div className="feature-div">
-                <img src="../../assets/images/feature-icon4.png" alt="" />
-                <h4>User-Friendly</h4>
-                <p>
-                  Duis aute irure dolor in repren in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -258,7 +289,7 @@ export default function Home() {
                 </div>
             </section> */}
 
-      <section className="why-choose-us-section">
+      {/* <section className="why-choose-us-section">
         <div className="d-flex align-items-center flex-wrap">
           <div className="half-section"></div>
           <div className="half-section half-content-section">
@@ -277,9 +308,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="testimonial-section" id="testimonials">
+      {/* <section className="testimonial-section" id="testimonials">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-sm-12 col-md-12 col-lg-6">
@@ -306,13 +337,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="faq-section">
         <div className="container">
           <SubText text="Faqs" />
           <h2 data-aos="fade-up" data-aos-duration="3000">
-          FAQs for ChargIQ App
+            FAQs for ChargIQ App
           </h2>
           <div className="row">
             <FaqAccordion />

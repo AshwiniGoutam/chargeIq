@@ -113,7 +113,7 @@ export default function ExploreSolutions() {
               </ul>
 
               <p>
-                Together, ChargIQ and Geofleet provide the ultimate solution for
+                Together, ChargIQ and <a href="geofleet.in">Geofleet</a> provide the ultimate solution for
                 powering and managing your electric fleet with unmatched
                 efficiency and control.
               </p>

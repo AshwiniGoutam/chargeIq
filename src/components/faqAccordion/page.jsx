@@ -101,7 +101,19 @@ function FaqAccordion() {
         </Accordion>
       </div>
       <div className="col-sm-12 col-md-6 col-lg-6">
-        <Accordion defaultActiveKey="4">
+        <Accordion defaultActiveKey="9">
+          <Accordion.Item
+            eventKey="9"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <Accordion.Header>How does the trip planner work?</Accordion.Header>
+            <Accordion.Body>
+              Input your source, destination, and starting state of charge
+              (SoC). ChargIQ’s AI-powered trip planner suggests optimal routes
+              and charging stops to save time and costs.
+            </Accordion.Body>
+          </Accordion.Item>
           <Accordion.Item
             eventKey="4"
             data-aos="fade-up"
@@ -169,19 +181,6 @@ function FaqAccordion() {
           </Accordion.Item>
 
           <Accordion.Item
-            eventKey="9"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <Accordion.Header>How does the trip planner work?</Accordion.Header>
-            <Accordion.Body>
-              Input your source, destination, and starting state of charge
-              (SoC). ChargIQ’s AI-powered trip planner suggests optimal routes
-              and charging stops to save time and costs.
-            </Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item
             eventKey="10"
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -192,8 +191,6 @@ function FaqAccordion() {
               and preferences for a personalized charging itinerary.
             </Accordion.Body>
           </Accordion.Item>
-
-
         </Accordion>
       </div>
     </>

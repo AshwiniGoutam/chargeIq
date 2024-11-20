@@ -97,11 +97,6 @@ export default function Services() {
                 })}
               </ul>
             </div>
-            <a href="#">
-              Learn More
-              {/* <img src="../../assets/images/service-arrow.svg" alt="arrow" /> */}
-              <ServiceArrow />
-            </a>
           </div>
         </div>
       );
