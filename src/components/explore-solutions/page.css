@@ -49,3 +49,13 @@
     width: 100%;
     border-radius: 16px;
 }
+
+@media (max-width:768px){
+    .nav-tabs{
+        /* overflow: scroll; */
+        flex-wrap: wrap;
+    }
+    .nav-tabs .nav-link{
+        padding: 20px 40px;
+    }
+}
