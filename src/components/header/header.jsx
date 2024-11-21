@@ -3,6 +3,7 @@ import "./header.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactModal from "../contactModal/page";
+import { Link } from "react-router-dom";
 
 export default function Header({ShowHeader}) {
   const [modalShow, setModalShow] = useState(false);
@@ -42,7 +43,7 @@ export default function Header({ShowHeader}) {
       />
       <header className={`header ${isScrolled || ShowHeader ? "header-scrolled" : ""}`}>
         <div data-aos="fade-down">
-          <img src="../assets/images/logo.png" alt="logo" width="140" />
+          <Link to='/'><img src="../assets/images/logo.png" alt="logo" width="140" /></Link>
         </div>
 
         <ul data-aos="fade-down">
