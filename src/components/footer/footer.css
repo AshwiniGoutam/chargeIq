@@ -101,3 +101,16 @@ footer a{
     width: 20px;
     object-fit: cover;
   }
+
+  .copyright-section{
+    background-color: #41cb5a;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .copyright-section a{
+    text-align: center;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+  }

@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactModal from "../contactModal/page";
 
-export default function Header() {
+export default function Header({ShowHeader}) {
   const [modalShow, setModalShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const handleClose = () => setModalShow(false);
@@ -40,7 +40,7 @@ export default function Header() {
         onHide={() => setModalShow(false)}
         handleClose={handleClose}
       />
-      <header className={`header ${isScrolled ? "header-scrolled" : ""}`}>
+      <header className={`header ${isScrolled || ShowHeader ? "header-scrolled" : ""}`}>
         <div data-aos="fade-down">
           <img src="../assets/images/logo.png" alt="logo" width="140" />
         </div>
