@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="container">
-          <div className="row justify-content-between w-100">
+          <div className="row row-gap-4 justify-content-between w-100">
             <div className="col-sm-12 col-md-6 col-lg-3">
               <div>
                 <img src="../assets/images/logo.png" alt="logo" width="140" />
@@ -30,7 +30,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
+            <div className="col-6 col-md-6 col-lg-4">
               <h4 className="footer-heading">Navigation</h4>
 
               <ul>
@@ -48,8 +48,8 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
-              <h4 className="footer-heading">Contact Us</h4>
+            <div className="col-6 col-md-6 col-lg-3">
+              <h4 className="footer-heading">Contact Information</h4>
 
               <div className="address-div">
                 <p>Address:</p>
@@ -70,11 +70,12 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="row mt-2">
+          <div className="row privacy-policy-row mt-2">
             <ul className="d-flex flex-row">
               <li>
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
+              <li>|</li>
               <li>
                 <Link to="/terms-and-conditions">Terms and Condition</Link>
               </li>
@@ -85,7 +86,7 @@ export default function Footer() {
       <div className="copyright-section">
         {/* <p>© Pixelcrews</p> */}
         <a href="https://parallaxiq.com/" target="_blank">
-          © Pixelcrews
+          Copyright @ 2024 © Pixelcrews  All rights reserved
         </a>
       </div>
     </>

@@ -13,6 +13,7 @@ import FaqAccordion from "../faqAccordion/page";
 import Footer from "../footer/footer";
 import CounterSection from "../counter/page";
 import ExploreSolutions from "../explore-solutions/page";
+import FeatureImages from "../feature-image/page";
 
 export default function Home() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function Home() {
       <section className="home-banner-section" id="home">
         <div className="container">
           <h1 data-aos="fade-up" data-aos-duration="1000">
-            Powering Seamless{" "}
+            Powering{" "}
             <span>
               <span>EV Networks</span>
               <span>EV Fleets Owners</span>
@@ -83,7 +84,7 @@ export default function Home() {
                 data-aos-duration="1500"
               />
               <img
-                src="../../assets/images/about-img.jpg"
+                src="../../assets/images/about-img-2.jpg"
                 alt="about-img"
                 data-aos="fade-right"
                 data-aos-duration="1500"
@@ -186,13 +187,14 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div>
+              {/* <div>
                 <img
                   src="../../assets/images/car-charging-img.png"
                   alt=""
                   width="100%"
                 />
-              </div>
+              </div> */}
+              <FeatureImages/>
             </div>
 
             <div

@@ -1,3 +1,4 @@
+/* Header styles */
 header {
     display: flex;
     align-items: center;
@@ -9,43 +10,127 @@ header {
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
-    transition: background-color 0.3s ease
-}
-
-.header-scrolled{
+    transition: background-color 0.3s ease;
+  }
+  
+  /* When scrolled, add background color */
+  .header-scrolled {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    /* transition: background-color 0.3s ease */
-}
-
-.header-scrolled ul li a{
+  }
+  
+  /* Adjust header links when scrolled */
+  .header-scrolled ul li a {
     color: black;
-}
-
-header ul {
+  }
+  
+  /* Style for the header menu */
+  header ul {
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-header ul li a {
+  }
+  
+  header ul li a {
     text-decoration: none;
     color: white;
-}
-
-header ul li a:hover {
-   color: #41cb5a;
-}
-
-@media (max-width:768px){
-    header ul{
-        display: none;
+  }
+  
+  header ul li a:hover {
+    color: #41cb5a;
+  }
+  
+  /* Mobile Menu Icon - hidden by default */
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    header ul {
+      display: none; /* Hide the regular menu on mobile */
     }
-
-    header .primary-btn{
-        display: none;
+  
+    header .primary-btn {
+      display: none; /* Hide primary button on mobile */
     }
-}
+  
+    .mobile-menu-icon {
+      display: block; /* Show hamburger icon */
+    }
+  
+    /* Styling for the hamburger icon */
+    .mobile-menu-icon svg {
+      width: 30px;
+      height: auto;
+    }
+  
+    .mobile-menu-icon svg path {
+      fill: white;
+      stroke: white;
+    }
+  
+    .header-scrolled .mobile-menu-icon svg path {
+      stroke: black; /* Change stroke color when scrolled */
+    }
+  }
+  
+  /* Sidebar styles - initially hidden */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #2cd150;
+    color: white;
+    transition: right 0.3s ease;
+    z-index: 1001;
+    padding-top: 60px;
+  }
+  
+  .sidebar.open {
+    right: 0; /* When open, bring it into view */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #e3dcdc;
+  }
+
+  .sidebar ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Overlay to close sidebar when clicked outside */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  

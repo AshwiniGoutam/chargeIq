@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ContactModal from "../contactModal/page";
 import { Link } from "react-router-dom";
+import HumbergMenu from "../HumbergMenu"; // Assuming this is your hamburger menu component
 
-export default function Header({ShowHeader}) {
+export default function Header({ ShowHeader }) {
   const [modalShow, setModalShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const handleClose = () => setModalShow(false);
   const handleShow = () => setModalShow(true);
 
@@ -17,6 +19,10 @@ export default function Header({ShowHeader}) {
     } else {
       setIsScrolled(false);
     }
+  };
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   useEffect(() => {
@@ -36,17 +42,18 @@ export default function Header({ShowHeader}) {
 
   return (
     <>
-      <ContactModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-        handleClose={handleClose}
-      />
-      <header className={`header ${isScrolled || ShowHeader ? "header-scrolled" : ""}`}>
+      <header
+        className={`header ${
+          isScrolled || ShowHeader ? "header-scrolled" : ""
+        }`}
+      >
         <div data-aos="fade-down">
-          <Link to='/'><img src="../assets/images/logo.png" alt="logo" width="140" /></Link>
+          <Link to="/">
+            <img src="../assets/images/logo.png" alt="logo" width="90" />
+          </Link>
         </div>
 
-        <ul data-aos="fade-down">
+        <ul data-aos="fade-down" className="desktop-menu">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -61,10 +68,52 @@ export default function Header({ShowHeader}) {
           </li>
         </ul>
 
-        <button className="primary-btn border-0" onClick={() => handleShow()} data-aos="fade-down">
+        {/* Hamburger Menu */}
+        <div className="mobile-menu-icon" onClick={toggleSidebar}>
+          <HumbergMenu />
+        </div>
+
+        <Link to="/contact-us" className="primary-btn" data-aos="fade-down">
           Contact Us <img src="../../assets/images/arrow.svg" alt="" />
-        </button>
+        </Link>
       </header>
+
+      {/* Mobile Sidebar */}
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={toggleSidebar}>
+          ✖
+        </button>
+        <ul>
+          <li>
+            <a href="#home" onClick={toggleSidebar}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about-us" onClick={toggleSidebar}>
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#features" onClick={toggleSidebar}>
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#explore-solutions" onClick={toggleSidebar}>
+              Explore Solutions
+            </a>
+          </li>
+          <li>
+            <Link to="/contact-us" onClick={toggleSidebar}>
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      {/* Overlay to close sidebar when clicked outside */}
+      {isSidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
     </>
   );
 }

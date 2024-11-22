@@ -5,7 +5,7 @@ function FaqAccordion() {
   return (
     <>
       <div className="col-sm-12 col-md-6 col-lg-6">
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Accordion.Item
             eventKey="0"
             data-aos="fade-up"
@@ -101,7 +101,7 @@ function FaqAccordion() {
         </Accordion>
       </div>
       <div className="col-sm-12 col-md-6 col-lg-6">
-        <Accordion defaultActiveKey="9">
+        <Accordion>
           <Accordion.Item
             eventKey="9"
             data-aos="fade-up"

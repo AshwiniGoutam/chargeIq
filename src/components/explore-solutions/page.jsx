@@ -6,7 +6,7 @@ import Tabs from "react-bootstrap/Tabs";
 export default function ExploreSolutions() {
   return (
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="home"
       id="uncontrolled-tab-example"
       className="mb-3"
     >
@@ -38,7 +38,7 @@ export default function ExploreSolutions() {
           </div>
           <div className="col-sm-6">
             <img
-              src="../../assets/images/tabs-image-1.jpeg"
+              src="../../assets/images/tabs-image-1.jpg"
               alt="image"
               className="w-100"
             />
@@ -78,7 +78,7 @@ export default function ExploreSolutions() {
           </div>
           <div className="col-sm-6">
             <img
-              src="../../assets/images/tabs-image-2.png"
+              src="../../assets/images/tabs-image-2.jpg"
               alt="image"
               className="w-100"
             />

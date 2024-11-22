@@ -25,13 +25,13 @@ footer h4{
 }
 
 .footer-heading{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ footer ul li a{
 }
 
 footer .address-div{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 footer .address-div p{
@@ -103,7 +103,9 @@ footer a{
   }
 
   .copyright-section{
-    background-color: #41cb5a;
+    /* background-color: #41cb5a; */
+    background-color: #2A3239;
+    border-top: 1px solid #cccccc30;
     padding: 10px;
     text-align: center;
   }
@@ -114,3 +116,15 @@ footer a{
     margin: 0;
     text-decoration: none;
   }
+
+@media (max-width:768px){
+    footer{
+        padding-bottom: 10px;
+    }
+    .privacy-policy-row ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+}
