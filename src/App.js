@@ -14,7 +14,7 @@ function App() {
         <Routes>
           {/* This will render Home for the root path */}
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsCondition />} />
 

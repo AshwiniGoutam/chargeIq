@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import ContactModal from "../contactModal/page";
 import { Link } from "react-router-dom";
 
-export default function Header({ShowHeader}) {
+export default function Header({ ShowHeader }) {
   const [modalShow, setModalShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const handleClose = () => setModalShow(false);
@@ -36,14 +36,15 @@ export default function Header({ShowHeader}) {
 
   return (
     <>
-      <ContactModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-        handleClose={handleClose}
-      />
-      <header className={`header ${isScrolled || ShowHeader ? "header-scrolled" : ""}`}>
+      <header
+        className={`header ${
+          isScrolled || ShowHeader ? "header-scrolled" : ""
+        }`}
+      >
         <div data-aos="fade-down">
-          <Link to='/'><img src="../assets/images/logo.png" alt="logo" width="140" /></Link>
+          <Link to="/">
+            <img src="../assets/images/logo.png" alt="logo" width="90" />
+          </Link>
         </div>
 
         <ul data-aos="fade-down">
@@ -61,9 +62,9 @@ export default function Header({ShowHeader}) {
           </li>
         </ul>
 
-        <button className="primary-btn border-0" onClick={() => handleShow()} data-aos="fade-down">
+        <Link to='/contact-us' className="primary-btn" data-aos="fade-down">
           Contact Us <img src="../../assets/images/arrow.svg" alt="" />
-        </button>
+        </Link>
       </header>
     </>
   );
