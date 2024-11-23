@@ -152,7 +152,7 @@ export default function Home() {
             ChargIQ: Your Ultimate EV{" "}
             <span className="d-block">Charging Solution</span>
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="1000">
             Stay Powered Anywhere, Anytime – Simplify EV Charging with India’s
             Leading Chargepoint Aggregator
           </p>

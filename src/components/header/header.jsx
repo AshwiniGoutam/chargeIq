@@ -66,6 +66,24 @@ export default function Header({ ShowHeader }) {
           <li>
             <a href="#explore-solutions">Explore Solutions</a>
           </li>
+          <li className="dropdown">
+            <a href="#">
+              Products{" "}
+              <img
+                src="../../assets/images/arrrow-down.png"
+                alt=""
+                width="20"
+              />
+            </a>
+            <ul className="dropdown-menu">
+              <li>
+                <Link to='/mobile-app'>Mobile App </Link>
+              </li>
+              <li>
+                <Link to='/csms-platform'>CSMS Platform</Link>
+              </li>
+            </ul>
+          </li>
         </ul>
 
         {/* Hamburger Menu */}

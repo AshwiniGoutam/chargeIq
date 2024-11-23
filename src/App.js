@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/contact/page";
 import PrivacyPolicy from "./pages/privacy-policy/page";
 import TermsCondition from "./pages/terms-condition/page";
+import MobileApp from "./pages/mobile-app/page";
+import CsmsPlatform from "./pages/csms-platform/page";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           {/* This will render Home for the root path */}
           <Route path="/" element={<Home />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/mobile-app" element={<MobileApp />} />
+          <Route path="/csms-platform" element={<CsmsPlatform />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsCondition />} />
 

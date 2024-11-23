@@ -1,0 +1,15 @@
+.csms-section{
+    padding: 60px 0;
+    background: rgb(65, 203, 90);
+    background: radial-gradient(
+      circle,
+      rgba(65, 203, 90, 0.510329131652661) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.csms-section img{
+    mix-blend-mode: multiply;
+    z-index: 9;
+    display: block;
+}
