@@ -3,15 +3,12 @@ import "./header.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import HumbergMenu from "../HumbergMenu"; // Assuming this is your hamburger menu component
+import HumbergMenu from "../HumbergMenu";
+import ArrowDown from "../arrowDown";
 
 export default function Header({ ShowHeader }) {
-  const [modalShow, setModalShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const handleClose = () => setModalShow(false);
-  const handleShow = () => setModalShow(true);
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -35,8 +32,8 @@ export default function Header({ ShowHeader }) {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Set the duration of the animation (optional)
-      once: true, // Run the animation only once (optional)
+      duration: 1200,
+      once: true,
     });
   }, []);
 
@@ -48,39 +45,35 @@ export default function Header({ ShowHeader }) {
         }`}
       >
         <div data-aos="fade-down">
-          <Link to="/">
-            <img src="../assets/images/logo.png" alt="logo" width="90" />
+          <Link to="/" className="logo-div">
+            <img src="../assets/images/logo.png" alt="logo" width="60" />
+            <h4>ChargIQ</h4>
           </Link>
         </div>
 
         <ul data-aos="fade-down" className="desktop-menu">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about-us">About Us</a>
+            <a href="#about-us">About</a>
           </li>
           <li>
             <a href="#features">Features</a>
           </li>
           <li>
-            <a href="#explore-solutions">Explore Solutions</a>
+            <a href="#explore-solutions">Solutions</a>
           </li>
           <li className="dropdown">
-            <a href="#">
-              Products{" "}
-              <img
-                src="../../assets/images/arrrow-down.png"
-                alt=""
-                width="20"
-              />
-            </a>
+            <Link to="#">
+              Products <ArrowDown />
+            </Link>
             <ul className="dropdown-menu">
               <li>
-                <Link to='/mobile-app'>Mobile App </Link>
+                <Link to="/mobile-app">Mobile App </Link>
               </li>
               <li>
-                <Link to='/csms-platform'>CSMS Platform</Link>
+                <Link to="/csms-platform">CSMS Platform</Link>
               </li>
             </ul>
           </li>
@@ -130,7 +123,6 @@ export default function Header({ ShowHeader }) {
         </ul>
       </div>
 
-      {/* Overlay to close sidebar when clicked outside */}
       {isSidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
     </>
   );

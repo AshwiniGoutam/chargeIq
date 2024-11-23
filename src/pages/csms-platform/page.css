@@ -1,15 +1,207 @@
-.csms-section{
-    padding: 60px 0;
-    background: rgb(65, 203, 90);
-    background: radial-gradient(
-      circle,
-      rgba(65, 203, 90, 0.510329131652661) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+.csms-section {
+  padding: 60px 0;
+  background: rgb(65, 203, 90);
+  background: radial-gradient(
+    circle,
+    rgba(65, 203, 90, 0.510329131652661) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 600px;
+  margin-bottom: 60px;
 }
 
-.csms-section img{
-    mix-blend-mode: multiply;
-    z-index: 9;
-    display: block;
+.csms-section::after {
+  content: "";
+  background-image: url("../../../public/assets/images/csms-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -100px;
+  height: 862px;
+  left: 0;
+  right: 0;
+}
+
+.csms-section::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -100px;
+  z-index: 1;
+  height: 862px;
+  left: 0;
+  right: 0;
+}
+
+.csms-section .container {
+  z-index: 9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* .csms-section img {
+  mix-blend-mode: multiply;
+  z-index: 9;
+  display: block;
+} */
+
+.why-choose-us-section {
+  padding: 60px 0;
+}
+
+.why-choose-us-section .row {
+  margin-top: 40px;
+}
+
+.why-choose-us-section .card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.why-choose-us-section .card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.why-choose-us-section .card h4 {
+  font-size: 18px;
+}
+
+.why-choose-us-section .card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.why-choose-us-section .card img {
+  background: #35a449;
+  width: 65px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.why-choose-us-section .card ul li {
+  font-size: 14px;
+}
+
+.csms-feature-section {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.csms-feature-section .row {
+  margin-top: 40px;
+}
+
+.csms-feature-section .card {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  border: 0;
+}
+
+.csms-feature-section .card h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.csms-feature-section .card p {
+  margin: 0;
+}
+
+.csms-feature-section .card img {
+  background-color: #35a449e0;
+  padding: 10px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+.security-section {
+  /* padding: 60px 0; */
+}
+
+.security-section img {
+  border-radius: 16px;
+}
+
+.use-case-section {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.use-case-section .row {
+  margin-top: 40px;
+}
+
+.use-case-section .card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: transparent;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.use-case-section .card img {
+  background-color: #35a449e0;
+  padding: 10px;
+  width: 55px;
+  border-radius: 100px;
+}
+
+.network-section {
+  padding: 100px 0;
+  background-image: url("../../../public/assets/images/charging-network-img.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.network-section h2,
+.network-section p {
+  padding-left: 0;
+  z-index: 9;
+}
+
+.network-section .primary-btn {
+  z-index: 9;
+  margin-top: 10px;
+}
+
+.network-section::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  height: 439px;
+  left: 0;
+  right: 0;
+}
+
+.whitelabel-solutions-section {
+  padding: 60px 0;
+}
+
+.whitelabel-solutions-section img {
+  border-radius: 16px;
+}
+
+.whitelabel-solutions-section a {
+  color: #35a449;
+  text-decoration: none;
 }

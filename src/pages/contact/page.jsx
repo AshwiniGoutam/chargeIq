@@ -92,7 +92,7 @@ export default function Contact() {
 
                   <div className="d-flex justify-content-end">
                     <button type="submit" className="primary-btn border-0">
-                      Submit Form
+                      Submit
                     </button>
                   </div>
                 </form>

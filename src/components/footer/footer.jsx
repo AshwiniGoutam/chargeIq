@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="container">
           <div className="row row-gap-4 justify-content-between w-100">
             <div className="col-sm-12 col-md-6 col-lg-3">
-              <div>
-                <img src="../assets/images/logo.png" alt="logo" width="140" />
+              <div className="logo-div">
+                <img src="../assets/images/logo.png" alt="logo" width="60" />
+                <h4>ChargIQ</h4>
               </div>
               <p>
                 Your all-in-one app for finding, accessing, and managing EV
@@ -86,7 +87,7 @@ export default function Footer() {
       <div className="copyright-section">
         {/* <p>© Pixelcrews</p> */}
         <a href="https://parallaxiq.com/" target="_blank">
-          Copyright @ 2024 © Pixelcrews  All rights reserved
+          Copyright @ 2024 © Pixelcrews All rights reserved
         </a>
       </div>
     </>

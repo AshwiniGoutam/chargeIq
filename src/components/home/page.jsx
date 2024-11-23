@@ -194,7 +194,7 @@ export default function Home() {
                   width="100%"
                 />
               </div> */}
-              <FeatureImages/>
+              <FeatureImages />
             </div>
 
             <div
@@ -256,8 +256,14 @@ export default function Home() {
               </a> */}
 
               {/* <SubText text="Who We Are" /> */}
-              <img src="../../assets/images/logo.png" alt="" width="150px" />
-              <h2>One App for All Your EV Charging Needs</h2>
+              <div className="logo-div">
+                <img src="../assets/images/logo.png" alt="logo" width="60" />
+                <h4>ChargIQ</h4>
+              </div>
+              <h2>
+                One App for All Your EV{" "}
+                <span className="d-block">Charging Needs</span>
+              </h2>
               <p>
                 Join thousands of EV owners from top brands who trust{" "}
                 <span className="d-block">

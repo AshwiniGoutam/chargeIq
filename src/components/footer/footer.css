@@ -4,7 +4,7 @@ footer{
     color: white;
 }
 
-footer img[alt='logo']{
+footer .logo-div{
     margin-bottom: 20px;
 }
 

@@ -1,15 +1,60 @@
 .mobile-app-section {
-  /* padding: 60px 0; */
-  background: rgb(65, 203, 90);
+  /* background: rgb(65, 203, 90);
   background: radial-gradient(
     circle,
     rgba(65, 203, 90, 0.510329131652661) 0%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ); */
+  height: 600px;
+  margin-bottom: 60px;
 }
 
-.mobile-app-section img{
-    mix-blend-mode: multiply;
-    z-index: 9;
-    display: block;
+/* .mobile-app-section img {
+  mix-blend-mode: multiply;
+  z-index: 9;
+  display: block;
+} */
+
+.mobile-app-section::after {
+  content: "";
+  background-image: url("../../../public/assets/images/mobile-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -100px;
+  height: 862px;
+  left: 0;
+  right: 0;
+}
+
+.mobile-app-section::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -100px;
+  z-index: 1;
+  height: 862px;
+  left: 0;
+  right: 0;
+}
+
+.mobile-app-section .container {
+  z-index: 9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.mobile-app-section .primary-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-app-section .col-sm-12 {
+  z-index: 9;
 }

@@ -7,12 +7,14 @@ import PrivacyPolicy from "./pages/privacy-policy/page";
 import TermsCondition from "./pages/terms-condition/page";
 import MobileApp from "./pages/mobile-app/page";
 import CsmsPlatform from "./pages/csms-platform/page";
+import ScrollToTop from "./components/scroll";
 
 function App() {
   return (
     <>
       {/* <Home /> */}
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* This will render Home for the root path */}
           <Route path="/" element={<Home />} />

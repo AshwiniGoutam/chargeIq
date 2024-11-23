@@ -9,17 +9,17 @@ import FaqAccordion from "../../components/faqAccordion/page";
 export default function MobileApp() {
   return (
     <>
-      <Header ShowHeader />
+      <Header />
 
       <section className="mobile-app-section">
         <div className="container">
           <div className="row align-items-center overflow-hidden">
             <div
-              className="col-sm-12 col-md-6 col-lg-6"
-              data-aos="fade-right"
+              className="col-sm-12 col-md-12 col-lg-12"
+              data-aos="fade-down"
               data-aos-duration="1500"
             >
-              <h1>ChargIQ: The Ultimate App for All Your EV Charging Needs</h1>
+              <h1>ChargIQ: The Ultimate App for All <span className="d-block">Your EV Charging Needs</span></h1>
               <p>
                 Stay Powered Anywhere, Anytime – Simplify EV Charging with
                 India’s Leading Chargepoint Aggregator
@@ -29,7 +29,7 @@ export default function MobileApp() {
                 <img src="../../assets/images/arrow.svg" alt="" />
               </a>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6">
+            {/* <div className="col-sm-12 col-md-6 col-lg-6">
               <img
                 src="../../assets/images/mobie-app-mockup.png"
                 alt=""
@@ -37,7 +37,7 @@ export default function MobileApp() {
                 data-aos="fade-left"
                 data-aos-duration="1500"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
