@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu"; // Assuming this is your hamburger menu component
 
 export default function Header({ ShowHeader }) {
-export default function Header({ ShowHeader }) {
   const [modalShow, setModalShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -48,15 +47,7 @@ export default function Header({ ShowHeader }) {
           isScrolled || ShowHeader ? "header-scrolled" : ""
         }`}
       >
-      <header
-        className={`header ${
-          isScrolled || ShowHeader ? "header-scrolled" : ""
-        }`}
-      >
         <div data-aos="fade-down">
-          <Link to="/">
-            <img src="../assets/images/logo.png" alt="logo" width="90" />
-          </Link>
           <Link to="/">
             <img src="../assets/images/logo.png" alt="logo" width="90" />
           </Link>
