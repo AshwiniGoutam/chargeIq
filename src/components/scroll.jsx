@@ -5,13 +5,28 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (window.history.action === "PUSH" || window.history.action === "POP") {
-      // Scroll to the top only on navigation, not on reload
-      window.scrollTo(0, 0);
-    }
+    window.scrollTo(0, 0); // Scroll to the top
   }, [pathname]);
 
-  return null;
+  useEffect(() => {
+    const storedScrollPosition = sessionStorage.getItem("scrollPosition");
+    if (storedScrollPosition) {
+      const [x, y] = storedScrollPosition.split(",").map(Number);
+      window.scrollTo(x, y);
+    }
+
+    const saveScrollPosition = () => {
+      const { scrollX, scrollY } = window;
+      sessionStorage.setItem("scrollPosition", `${scrollX},${scrollY}`);
+    };
+
+    window.addEventListener("beforeunload", saveScrollPosition);
+    return () => {
+      window.removeEventListener("beforeunload", saveScrollPosition);
+    };
+  }, []);
+
+  return null; // This component doesn't render anything
 };
 
 export default ScrollToTop;

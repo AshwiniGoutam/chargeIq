@@ -1,3 +1,9 @@
 .faq-section .accordion-item{
     margin-bottom: 20px;
 }
+
+@media(max-width:768px){
+    .accordion-button{
+        padding: 16px !important;
+    }
+}

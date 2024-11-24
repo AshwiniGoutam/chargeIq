@@ -1,0 +1,72 @@
+.trip-banner {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f8f8f8, #eaeaea);
+  font-family: Arial, sans-serif;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section select,
+.input-section button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 10px;
+}
+
+.slide {
+  flex: none;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.slide.city {
+  background-color: #f0f8ff;
+}
+
+.slide.destination {
+  background-color: #ffe4e1;
+}
+
+.slide h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.slide p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}

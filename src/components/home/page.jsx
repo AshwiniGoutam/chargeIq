@@ -227,7 +227,7 @@ export default function Home() {
       <section className="explore-solutions" id="explore-solutions">
         <div className="container">
           <SubText text="Explore Solutions" />
-          <div className="row" data-aos="fade-up" data-aos-duration="3000">
+          <div className="row" data-aos="fade-up" data-aos-duration="1000">
             <ExploreSolutions />
           </div>
         </div>

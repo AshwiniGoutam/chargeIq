@@ -205,3 +205,12 @@
   color: #35a449;
   text-decoration: none;
 }
+
+@media(max-width:768px){
+  .network-section::before{
+    height: 100%;
+  }
+  .network-section .container{
+    padding:0 40px;
+  }
+}

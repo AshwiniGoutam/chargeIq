@@ -102,7 +102,7 @@ export default function Header({ ShowHeader }) {
           </li>
           <li>
             <a href="#about-us" onClick={toggleSidebar}>
-              About Us
+              About
             </a>
           </li>
           <li>
@@ -111,9 +111,14 @@ export default function Header({ ShowHeader }) {
             </a>
           </li>
           <li>
-            <a href="#explore-solutions" onClick={toggleSidebar}>
-              Explore Solutions
-            </a>
+            <Link to='/mobile-app' onClick={toggleSidebar}>
+              Mobile App
+            </Link>
+          </li>
+          <li>
+            <Link to='/csms-platform' onClick={toggleSidebar}>
+              Csms Platform
+            </Link>
           </li>
           <li>
             <Link to="/contact-us" onClick={toggleSidebar}>

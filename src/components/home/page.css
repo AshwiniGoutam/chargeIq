@@ -320,6 +320,9 @@
   .home-banner-section .container h1 {
     font-size: 32px;
   }
+  .home-banner-section .container h1 span{
+    text-align: center;
+  }
   .about-us-section img[alt="about-img"] {
     width: 100%;
     height: 100%;

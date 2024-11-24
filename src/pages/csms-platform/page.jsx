@@ -366,7 +366,7 @@ export default function CsmsPlatform() {
 
       <section className="whitelabel-solutions-section">
         <div className="container">
-          <div className="row align-items-center overflow-hidden">
+          <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <img
                 src="../../assets/images/whitelabel-solutions-img.jpg"

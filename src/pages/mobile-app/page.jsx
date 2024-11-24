@@ -5,6 +5,7 @@ import Footer from "../../components/footer/footer";
 import FeatureImages from "../../components/feature-image/page";
 import SubText from "../../components/subText/page";
 import FaqAccordion from "../../components/faqAccordion/page";
+import TripPlanner from "../../components/tripPlanner/page";
 
 export default function MobileApp() {
   return (
@@ -19,7 +20,10 @@ export default function MobileApp() {
               data-aos="fade-down"
               data-aos-duration="1500"
             >
-              <h1>ChargIQ: The Ultimate App for All <span className="d-block">Your EV Charging Needs</span></h1>
+              <h1>
+                ChargIQ: The Ultimate App for All{" "}
+                <span className="d-block">Your EV Charging Needs</span>
+              </h1>
               <p>
                 Stay Powered Anywhere, Anytime – Simplify EV Charging with
                 India’s Leading Chargepoint Aggregator
@@ -41,6 +45,8 @@ export default function MobileApp() {
           </div>
         </div>
       </section>
+
+      {/* <TripPlanner /> */}
 
       <section className="featured-section bg-white" id="features">
         <div className="container">
