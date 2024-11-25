@@ -39,13 +39,13 @@ export default function Footer() {
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to="/mobile-app">Mobile App</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link to="/csms-platform">CSMS Platform</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>

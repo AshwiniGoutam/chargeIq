@@ -117,7 +117,7 @@ export default function Header({ ShowHeader }) {
           </li>
           <li>
             <Link to='/csms-platform' onClick={toggleSidebar}>
-              Csms Platform
+              CSMS Platform
             </Link>
           </li>
           <li>

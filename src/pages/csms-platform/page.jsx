@@ -60,6 +60,16 @@ export default function CsmsPlatform() {
         { text: "Embedded roaming services for wider access" },
       ],
     },
+    {
+      icon: "../../assets/images/csms-feature-icon-6.png",
+      heading: "Proactive Maintenance and Uptime Management",
+      text: "Keep your charging network running smoothly with intelligent maintenance tools",
+      points: [
+        { text: "Self-healing algorithms to minimize downtime" },
+        { text: "Real-time fault detection with instant alerts" },
+        { text: "Predictive maintenance insights to address issues before they occur" },
+      ],
+    },
   ];
 
   const ToolsData = [
@@ -369,7 +379,7 @@ export default function CsmsPlatform() {
           <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <img
-                src="../../assets/images/whitelabel-solutions-img.jpg"
+                src="../../assets/images/whitelabel-solutions-img.png"
                 alt="images"
                 width="100%"
               />
@@ -421,7 +431,7 @@ export default function CsmsPlatform() {
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
               <img
-                src="../../assets/images/charging-exprience.jpg"
+                src="../../assets/images/charging-exprience.png"
                 alt="images"
                 width="100%"
               />

@@ -6,6 +6,7 @@ import FeatureImages from "../../components/feature-image/page";
 import SubText from "../../components/subText/page";
 import FaqAccordion from "../../components/faqAccordion/page";
 import TripPlanner from "../../components/tripPlanner/page";
+import { Link } from "react-router-dom";
 
 export default function MobileApp() {
   return (
@@ -47,6 +48,65 @@ export default function MobileApp() {
       </section>
 
       {/* <TripPlanner /> */}
+
+      <section className="trip-planner-section">
+        <div className="container">
+          <div className="row align-items-center overflow-hidden">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div className="position-relative">
+                <img
+                  src="../../assets/images/mobile-mockup-side-1.png"
+                  alt="mock-up"
+                  className="mockup-1"
+                />
+                <img
+                  src="../../assets/images/mobile-mockup-new.png"
+                  alt="mock-up"
+                  className="mockup-2"
+                />
+                <img
+                  src="../../assets/images/mobile-mockup-side-2.png"
+                  alt="mock-up"
+                  className="mockup-3"
+                />
+              </div>
+            </div>
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2>
+                Travelling Outstation via your EV?{" "}
+                <span className="primary-color">
+                  — But worried about range anxiety?
+                </span>
+              </h2>
+              <p>
+                Don’t let uncertainty stop you! ChargIQ's Artificial
+                Intelligence-backed Trip Planner ensures your journey is smooth
+                and stress-free.
+              </p>
+              <ul>
+                <li>Locate EV chargers along your route</li>
+                <li>Explore charger amenities</li>
+                <li>Customize stops based on your preferences</li>
+              </ul>
+              <p>
+                Say goodbye to range anxiety and hello to carefree travel with
+                ChargIQ!
+              </p>
+              <Link href="/contact-us" className="primary-btn">
+                Plan Your Trip Now with ChargIQ!
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="featured-section bg-white" id="features">
         <div className="container">
