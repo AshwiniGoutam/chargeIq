@@ -24,16 +24,16 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Header />
+      <Header home/>
 
       <section className="home-banner-section" id="home">
         <div className="container">
           <h1 data-aos="fade-up" data-aos-duration="1000">
-            Powering{" "}
+            ChargIQ | EV &{" "}
             <span>
               <span>EV Networks</span>
-              <span>EV Fleets Owners</span>
-              <span>EV Users</span>
+              <span>EV Owners</span>
+              <span>EV Connect</span>
               <span>EV Journeys</span>
             </span>
           </h1>
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about-us-section" id="about-us">
+      {/* <section className="about-us-section" id="about-us">
         <div className="container">
           <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6">
@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="services-section" id="features">
         <div className="container">

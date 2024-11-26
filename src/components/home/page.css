@@ -1,5 +1,6 @@
 .home-banner-section {
   height: 600px;
+  margin-bottom: 90px;
 }
 
 .home-banner-section::after {
@@ -20,7 +21,8 @@
   position: absolute;
   top: -100px;
   z-index: 1;
-  height: 792px;
+  /* height: 792px; */
+  height: 862px;
   left: 0;
   right: 0;
 }

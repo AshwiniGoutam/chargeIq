@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu";
 import ArrowDown from "../arrowDown";
 
-export default function Header({ ShowHeader }) {
+export default function Header({ ShowHeader, home, mobile, csms }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -23,6 +23,7 @@ export default function Header({ ShowHeader }) {
   };
 
   useEffect(() => {
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -36,6 +37,17 @@ export default function Header({ ShowHeader }) {
       once: true,
     });
   }, []);
+
+  // const customScroll = (el) => {
+  //   console.log();
+    
+  //   const offset = 1000; // Adjust this value to stop before the section
+  //   const elementPosition = el.offsetTop - offset;
+  //   window.scrollTo({
+  //     top: elementPosition,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <>
@@ -52,18 +64,20 @@ export default function Header({ ShowHeader }) {
         </div>
 
         <ul data-aos="fade-down" className="desktop-menu">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
+          {!home && (
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          )}
+          {/* <li>
             <a href="#about-us">About</a>
-          </li>
+          </li> */}
           <li>
-            <a href="#features">Features</a>
+            <a href="#features" >Features</a>
           </li>
-          <li>
-            <a href="#explore-solutions">Solutions</a>
-          </li>
+         {!mobile && !csms && <li>
+            <a href="/#explore-solutions">Solutions</a>
+          </li>}
           <li className="dropdown">
             <Link to="#">
               Products <ArrowDown />
@@ -96,9 +110,11 @@ export default function Header({ ShowHeader }) {
         </button>
         <ul>
           <li>
-            <a href="#home" onClick={toggleSidebar}>
-              Home
-            </a>
+            {!home && (
+              <li>
+                <Link to="/" onClick={toggleSidebar}>Home</Link>
+              </li>
+            )}
           </li>
           <li>
             <a href="#about-us" onClick={toggleSidebar}>
@@ -111,12 +127,12 @@ export default function Header({ ShowHeader }) {
             </a>
           </li>
           <li>
-            <Link to='/mobile-app' onClick={toggleSidebar}>
+            <Link to="/mobile-app" onClick={toggleSidebar}>
               Mobile App
             </Link>
           </li>
           <li>
-            <Link to='/csms-platform' onClick={toggleSidebar}>
+            <Link to="/csms-platform" onClick={toggleSidebar}>
               CSMS Platform
             </Link>
           </li>

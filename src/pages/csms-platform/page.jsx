@@ -122,7 +122,7 @@ export default function CsmsPlatform() {
 
   return (
     <>
-      <Header />
+      <Header csms/>
       <section className="csms-section">
         <div className="container">
           <div className="row align-items-center">
@@ -159,7 +159,7 @@ export default function CsmsPlatform() {
         </div>
       </section>
 
-      <section className="why-choose-us-section">
+      <section className="why-choose-us-section" id='features'>
         <div className="container">
           <h2 data-aos="fade-up" data-aos-duration="1500">
             Why Choose ChargIQ CSMS?
@@ -379,7 +379,7 @@ export default function CsmsPlatform() {
           <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <img
-                src="../../assets/images/whitelabel-solutions-img.png"
+                src="../../assets/images/who-we-are-bg-image.png"
                 alt="images"
                 width="100%"
               />

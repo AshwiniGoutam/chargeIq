@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
+import React, { useState } from "react";
 import "./page.css";
 import Header from "../../components/header/header";
 import SubText from "../../components/subText/page";
@@ -8,6 +8,79 @@ import FeatureImages from "../../components/feature-image/page";
 import Footer from "../../components/footer/footer";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    let validationErrors = {};
+    if (!formData.first_name.trim()) {
+      validationErrors.first_name = "First name is required";
+    }
+    if (!formData.last_name.trim()) {
+      validationErrors.last_name = "Last name is required";
+    }
+    if (!formData.email.trim()) {
+      validationErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      validationErrors.email = "Email is invalid";
+    }
+    if (!formData.message.trim()) {
+      validationErrors.message = "Message is required";
+    }
+    return validationErrors;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+    setErrors({});
+    setIsSubmitting(true);
+  
+    try {
+      const response = await fetch("https://api.chargiq.in/v1/user/contact-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          first_name: formData.first_name,
+          last_name: formData.last_name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+  
+      if (response.ok) {
+        const result = await response.json();
+        alert("Form submitted successfully!");
+        setFormData({ first_name: "", last_name: "", email: "", message: "" });
+      } else {
+        const errorResponse = await response.json();
+        alert(`Failed to submit the form: ${errorResponse.message || "Unknown error"}`);
+      }
+    } catch (error) {
+      alert("An error occurred while submitting the form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <>
       <Header ShowHeader />
@@ -49,50 +122,75 @@ export default function Contact() {
                   </p>
                 </div>
 
-                <form action="#">
+                <form onSubmit={handleSubmit}>
                   <div className="d-flex gap-4">
                     <div className="w-100">
-                      <label htmlFor="name">First Name</label>
+                      <label htmlFor="first_name">First Name</label>
                       <input
                         type="text"
+                        name="first_name"
                         className="form-control"
-                        placeholder="first name"
-                        requried
+                        placeholder="First name"
+                        value={formData.first_name}
+                        onChange={handleChange}
                       />
+                      {errors.first_name && (
+                        <small className="text-danger">
+                          {errors.first_name}
+                        </small>
+                      )}
                     </div>
                     <div className="w-100">
-                      <label htmlFor="name">Last Name</label>
+                      <label htmlFor="last_name">Last Name</label>
                       <input
                         type="text"
+                        name="last_name"
                         className="form-control"
-                        placeholder="last name"
-                        requried
+                        placeholder="Last name"
+                        value={formData.last_name}
+                        onChange={handleChange}
                       />
+                      {errors.last_name && (
+                        <small className="text-danger">{errors.last_name}</small>
+                      )}
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="name">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                       type="text"
+                      name="email"
                       className="form-control"
                       placeholder="john@email.com"
-                      requried
+                      value={formData.email}
+                      onChange={handleChange}
                     />
+                    {errors.email && (
+                      <small className="text-danger">{errors.email}</small>
+                    )}
                   </div>
                   <div>
-                    <label htmlFor="name">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea
-                      type="text"
+                      name="message"
                       className="form-control"
-                      placeholder="message"
+                      placeholder="Message"
                       rows="4"
-                      requried
+                      value={formData.message}
+                      onChange={handleChange}
                     />
+                    {errors.message && (
+                      <small className="text-danger">{errors.message}</small>
+                    )}
                   </div>
 
                   <div className="d-flex justify-content-end">
-                    <button type="submit" className="primary-btn border-0">
-                      Submit
+                    <button
+                      type="submit"
+                      className="primary-btn border-0"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </form>
