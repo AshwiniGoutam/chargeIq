@@ -379,7 +379,7 @@ export default function CsmsPlatform() {
           <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <img
-                src="../../assets/images/who-we-are-bg-image.png"
+                src="../../assets/images/white-label.png"
                 alt="images"
                 width="100%"
               />
