@@ -117,11 +117,6 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
             )}
           </li>
           <li>
-            <a href="#about-us" onClick={toggleSidebar}>
-              About
-            </a>
-          </li>
-          <li>
             <a href="#features" onClick={toggleSidebar}>
               Features
             </a>
