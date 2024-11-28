@@ -83,7 +83,7 @@ export default function Contact() {
   };
   return (
     <>
-      <Header ShowHeader />
+      <Header ShowHeader contact />
       <section className="contact-section">
         <div className="container">
           <div className="row row-gap-4">

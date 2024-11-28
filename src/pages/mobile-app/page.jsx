@@ -49,7 +49,7 @@ export default function MobileApp() {
 
       {/* <TripPlanner /> */}
 
-      <section className="trip-planner-section">
+      {/* <section className="trip-planner-section">
         <div className="container">
           <div className="row row-gap-4 align-items-center overflow-hidden overflow-hidden">
             <div
@@ -94,7 +94,7 @@ export default function MobileApp() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="mobile-app-feature" id="features">
         <div className="container">
@@ -239,7 +239,7 @@ export default function MobileApp() {
             </div>
           </div>
 
-          <div className="row row-gap-4 align-items-center overflow-hidden">
+          {/* <div className="row row-gap-4 align-items-center overflow-hidden">
             <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-right"
               data-aos-duration="1000">
               <div>
@@ -270,7 +270,7 @@ export default function MobileApp() {
                 width="100%"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

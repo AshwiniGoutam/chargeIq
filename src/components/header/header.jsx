@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu";
 import ArrowDown from "../arrowDown";
 
-export default function Header({ ShowHeader, home, mobile, csms }) {
+export default function Header({ ShowHeader, home, mobile, csms, contact }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -23,7 +23,6 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
   };
 
   useEffect(() => {
-    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -40,7 +39,7 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
 
   // const customScroll = (el) => {
   //   console.log();
-    
+
   //   const offset = 1000; // Adjust this value to stop before the section
   //   const elementPosition = el.offsetTop - offset;
   //   window.scrollTo({
@@ -48,6 +47,37 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
   //     behavior: "smooth",
   //   });
   // };
+
+  useEffect(() => {
+    const links = document.querySelectorAll("a[href^='#']");
+    links.forEach((link) => {
+      link.addEventListener("click", handleScrolled);
+    });
+
+    // Cleanup listener
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener("click", handleScrolled);
+      });
+    };
+  }, []);
+
+  const handleScrolled = (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href").slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 50; // Adjust the offset as needed
+      const targetPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <>
@@ -73,11 +103,13 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
             <a href="#about-us">About</a>
           </li> */}
           <li>
-            <a href="#features" >Features</a>
+            <a href="#features">Features</a>
           </li>
-         {!mobile && !csms && <li>
-            <a href="/#explore-solutions">Solutions</a>
-          </li>}
+          {!mobile && !csms && !contact && (
+            <li>
+              <a href="#explore-solutions">Solutions</a>
+            </li>
+          )}
           <li className="dropdown">
             <Link to="#">
               Products <ArrowDown />
@@ -112,7 +144,9 @@ export default function Header({ ShowHeader, home, mobile, csms }) {
           <li>
             {!home && (
               <li>
-                <Link to="/" onClick={toggleSidebar}>Home</Link>
+                <Link to="/" onClick={toggleSidebar}>
+                  Home
+                </Link>
               </li>
             )}
           </li>
