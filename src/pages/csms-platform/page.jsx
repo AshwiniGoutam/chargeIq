@@ -67,7 +67,9 @@ export default function CsmsPlatform() {
       points: [
         { text: "Self-healing algorithms to minimize downtime" },
         { text: "Real-time fault detection with instant alerts" },
-        { text: "Predictive maintenance insights to address issues before they occur" },
+        {
+          text: "Predictive maintenance insights to address issues before they occur",
+        },
       ],
     },
   ];
@@ -122,12 +124,12 @@ export default function CsmsPlatform() {
 
   return (
     <>
-      <Header csms/>
+      <Header csms ShowHeader />
       <section className="csms-section">
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-sm-12 col-md-12 col-lg-12"
+              className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-down"
               data-aos-duration="1500"
             >
@@ -148,18 +150,20 @@ export default function CsmsPlatform() {
                 <img src="../../assets/images/arrow.svg" alt=""></img>
               </Link>
             </div>
-            {/* <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="col-sm-12 col-md-6 col-lg-6">
               <img
                 src="../../assets/images/csms-img.png"
                 alt="csms"
                 width="100%"
+                data-aos="fade-left"
+                data-aos-duration="1500"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="why-choose-us-section" id='features'>
+      <section className="why-choose-us-section" id="features">
         <div className="container">
           <h2 data-aos="fade-up" data-aos-duration="1500">
             Why Choose ChargIQ CSMS?

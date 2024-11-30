@@ -1,16 +1,16 @@
 .csms-section {
   padding: 60px 0;
-  background: rgb(65, 203, 90);
+  /* background: rgb(65, 203, 90);
   background: radial-gradient(
     circle,
     rgba(65, 203, 90, 0.510329131652661) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  height: 600px;
-  margin-bottom: 60px;
+  height: 600px; */
+  padding: 60px 0;
 }
 
-.csms-section::after {
+/* .csms-section::after {
   content: "";
   background-image: url("../../../public/assets/images/csms-banner.jpg");
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   height: 862px;
   left: 0;
   right: 0;
-}
+} */
 
 .csms-section .container {
   z-index: 9;
@@ -45,6 +45,16 @@
   text-align: center;
 }
 
+.csms-section h1, .csms-section p{
+  color: black;
+  text-align: left;
+}
+
+.csms-section .primary-btn{
+  text-align: left;
+  margin-left: 0 !important;
+}
+
 /* .csms-section img {
   mix-blend-mode: multiply;
   z-index: 9;
@@ -53,6 +63,7 @@
 
 .why-choose-us-section {
   padding: 60px 0;
+  background-color: #f8f8f8;
 }
 
 .why-choose-us-section .row {
@@ -95,7 +106,6 @@
 
 .csms-feature-section {
   padding: 60px 0;
-  background-color: #f8f8f8;
 }
 
 .csms-feature-section .row {
@@ -130,6 +140,8 @@
 
 .security-section {
   /* padding: 60px 0; */
+  
+  background-color: #f8f8f8;
 }
 
 .security-section img {
@@ -138,7 +150,6 @@
 
 .use-case-section {
   padding: 60px 0;
-  background-color: #f8f8f8;
 }
 
 .use-case-section .row {
