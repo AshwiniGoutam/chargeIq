@@ -132,4 +132,12 @@
   .trip-planner-section .mockup-1 {
     display: none;
   }
+
+  .mobile-app-feature img{
+    height: 100%;
+  }
+
+  .mobile-app-feature .container .row-1, .mobile-app-feature .container .row-3 {
+    flex-direction: column-reverse;
+  }
 }

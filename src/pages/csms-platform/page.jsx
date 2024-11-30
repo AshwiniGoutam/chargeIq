@@ -127,7 +127,7 @@ export default function CsmsPlatform() {
       <Header csms ShowHeader />
       <section className="csms-section">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row overflow-hidden align-items-center">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-down"

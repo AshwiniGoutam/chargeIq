@@ -143,11 +143,9 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
         <ul>
           <li>
             {!home && (
-              <li>
-                <Link to="/" onClick={toggleSidebar}>
-                  Home
-                </Link>
-              </li>
+              <Link to="/" onClick={toggleSidebar}>
+                Home
+              </Link>
             )}
           </li>
           <li>

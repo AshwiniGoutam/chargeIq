@@ -15,7 +15,7 @@ export default function MobileApp() {
 
       <section className="mobile-app-section">
         <div className="container">
-          <div className="row align-items-center overflow-hidden">
+          <div className="row row-gap-4 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-down"
@@ -30,7 +30,7 @@ export default function MobileApp() {
                 Download App Now{" "}
                 <img src="../../assets/images/arrow.svg" alt="" />
               </a> */}
-              <div class="d-flex gap-4 justify-content-start mt-4">
+              <div class="d-flex flex-wrap justify-content-start gap-4 mt-4">
                 <a href="#" title="" class="flex" role="button">
                   <img
                     class="w-auto h-14"
@@ -114,19 +114,18 @@ export default function MobileApp() {
 
       <section className="mobile-app-feature" id="features">
         <div className="container">
-          <div  data-aos="fade-up"
-              data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h2 className="text-center">Mobile App Features</h2>
             <p className="text-center">
-              Our mobile app delivers intuitive navigation, real-time updates,  and personalized features, ensuring a seamless on-the-go
+              Our mobile app delivers intuitive navigation, real-time updates,
+              and personalized features, ensuring a seamless on-the-go
               <span className="d-block">
-               
                 experience. Stay connected with tools designed to meet your
                 needs effortlessly.
               </span>
             </p>
           </div>
-          <div className="row row-gap-4 align-items-center overflow-hidden">
+          <div className="row row-gap-4 row-1 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-right"
@@ -169,7 +168,7 @@ export default function MobileApp() {
             </div>
           </div>
 
-          <div className="row row-gap-4 align-items-center overflow-hidden">
+          <div className="row row-gap-4 row-2 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-right"
@@ -207,7 +206,7 @@ export default function MobileApp() {
             </div>
           </div>
 
-          <div className="row row-gap-4 align-items-center overflow-hidden">
+          <div className="row row-gap-4 row-3 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-right"
@@ -248,7 +247,7 @@ export default function MobileApp() {
             </div>
           </div>
 
-          <div className="row row-gap-4 align-items-center overflow-hidden">
+          <div className="row row-gap-4 row-4 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-right"
