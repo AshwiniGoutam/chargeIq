@@ -126,6 +126,13 @@
 }
 
 
+.mobile-app-feature ul{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 @media (max-width: 768px) {
   .trip-planner-section .mockup-3,
