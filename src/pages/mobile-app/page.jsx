@@ -11,38 +11,54 @@ import { Link } from "react-router-dom";
 export default function MobileApp() {
   return (
     <>
-      <Header mobile />
+      <Header mobile ShowHeader />
 
       <section className="mobile-app-section">
         <div className="container">
           <div className="row align-items-center overflow-hidden">
             <div
-              className="col-sm-12 col-md-12 col-lg-12"
+              className="col-sm-12 col-md-6 col-lg-6"
               data-aos="fade-down"
               data-aos-duration="1500"
             >
-              <h1>
-                ChargIQ: The Ultimate App for All{" "}
-                <span className="d-block">Your EV Charging Needs</span>
-              </h1>
+              <h1>ChargIQ: The Ultimate App for All Your EV Charging Needs</h1>
               <p>
                 Stay Powered Anywhere, Anytime – Simplify EV Charging with
                 India’s Leading Chargepoint Aggregator
               </p>
-              <a href="#" className="primary-btn">
+              {/* <a href="#" className="primary-btn">
                 Download App Now{" "}
                 <img src="../../assets/images/arrow.svg" alt="" />
-              </a>
+              </a> */}
+              <div class="d-flex gap-4 justify-content-start mt-4">
+                <a href="#" title="" class="flex" role="button">
+                  <img
+                    class="w-auto h-14"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg"
+                    alt=""
+                    className="download-btn"
+                  />
+                </a>
+
+                <a href="#" title="" class="flex" role="button">
+                  <img
+                    class="w-auto h-14"
+                    src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-play-store.svg"
+                    alt=""
+                    className="download-btn"
+                  />
+                </a>
+              </div>
             </div>
-            {/* <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="col-sm-12 col-md-6 col-lg-6">
               <img
-                src="../../assets/images/mobie-app-mockup.png"
+                src="../../assets/images/mobile-page-mockup.png"
                 alt=""
-                width="100%"
+                className="mobile-app-mockup"
                 data-aos="fade-left"
                 data-aos-duration="1500"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
@@ -98,6 +114,18 @@ export default function MobileApp() {
 
       <section className="mobile-app-feature" id="features">
         <div className="container">
+          <div  data-aos="fade-up"
+              data-aos-duration="1000">
+            <h2 className="text-center">Mobile App Features</h2>
+            <p className="text-center">
+              Our mobile app delivers intuitive navigation, real-time updates,  and personalized features, ensuring a seamless on-the-go
+              <span className="d-block">
+               
+                experience. Stay connected with tools designed to meet your
+                needs effortlessly.
+              </span>
+            </p>
+          </div>
           <div className="row row-gap-4 align-items-center overflow-hidden">
             <div
               className="col-sm-12 col-md-6 col-lg-6"
@@ -142,16 +170,22 @@ export default function MobileApp() {
           </div>
 
           <div className="row row-gap-4 align-items-center overflow-hidden">
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-right"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img
                 src="../../assets/images/mobile-app-feature-3.png"
                 alt="feature-1"
                 width="100%"
               />
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-left"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div>
                 <h2>AI-Optimized Trip Planner </h2>
                 <ul>
@@ -174,8 +208,11 @@ export default function MobileApp() {
           </div>
 
           <div className="row row-gap-4 align-items-center overflow-hidden">
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-right"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div>
                 <h2>Secure Payments and Effortless Charging</h2>
                 <ul>
@@ -198,8 +235,11 @@ export default function MobileApp() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-left"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <img
                 src="../../assets/images/mobile-app-feature-2.png"
                 alt="feature-1"
@@ -209,16 +249,22 @@ export default function MobileApp() {
           </div>
 
           <div className="row row-gap-4 align-items-center overflow-hidden">
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-right"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img
                 src="../../assets/images/mobile-app-feature-5.jpg"
                 alt="feature-1"
                 width="100%"
               />
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6"  data-aos="fade-left"
-              data-aos-duration="1000">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div>
                 <h2>Check-ins and Reviews</h2>
                 <ul>

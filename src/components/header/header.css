@@ -16,7 +16,8 @@ header {
 /* When scrolled, add background color */
 .header-scrolled {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  border-bottom: 1px solid #cccccc8b;
 }
 
 /* Adjust header links when scrolled */
