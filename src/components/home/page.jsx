@@ -73,74 +73,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="about-us-section" id="about-us">
-        <div className="container">
-          <div className="row row-gap-4 align-items-center overflow-hidden">
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <img
-                src="../../assets/images/circle-img.png"
-                alt="circle-img"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              />
-              <img
-                src="../../assets/images/about-img-2.jpg"
-                alt="about-img"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              />
-            </div>
-            <div
-              className="col-sm-12 col-md-6 col-lg-6"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <SubText text="About" />
-              <h2>Empowering the Future of Electric Mobility</h2>
-              <p>
-                At ChargIQ, we are redefining the EV charging experience by
-                delivering innovative, end-to-end solutions for seamless
-                electric journeys. Our platforms combine cutting-edge technology
-                with unmatched reliability to power EV users, fleets, and
-                networks with confidence.
-              </p>
-
-              <p className="">
-                Join us in building a smarter, greener future—one charge at a
-                time.
-              </p>
-
-              <AboutAccordion />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="services-section" id="features">
-        <div className="container">
-          <div
-            className="d-flex align-items-center justify-content-between flex-wrap"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <div>
-              <SubText text="Features" />
-              <h2>
-                ChargIQ: The Ultimate App for{" "}
-                <span className="d-block">All Your EV Charging Needs</span>
-              </h2>
-              <p>
-                Stay Powered Anywhere, Anytime – Simplify EV Charging with
-                India’s Leading Chargepoint Aggregator
-              </p>
-            </div>
-          </div>
-          <div className="row row-gap-4">
-            <Services />
-          </div>
-        </div>
-      </section> */}
-
       <section className="featured-section" id="features">
         <div className="container">
           <SubText
@@ -241,19 +173,6 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              {/* <SubText text="Who We Are" />
-              <h2>
-                Your Safety is Our{" "}
-                <span className="d-block">Top Priority.</span>
-              </h2>
-              <p>
-                Rostrum exercitationem ullam corporis suscipit laboriosam,
-                nisiae commodi consenuatur reprehenderit.
-              </p>
-              <a href="#" className="primary-btn">
-                Get Started{" "}
-                <img src="../../assets/images/arrow.svg" alt="arrow" />
-              </a> */}
 
               {/* <SubText text="Who We Are" /> */}
               <div className="logo-div">
@@ -281,71 +200,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="pricing-section">
-                <div className="container">
-                    <SubText text='Our Pricing' />
-                    <h2 data-aos="fade-up"
-                        data-aos-duration="3000">
-                        Choose From Our Best <span className="d-block">Charging Plans</span>
-                    </h2>
-
-                    <div className="row" data-aos="fade-up"
-                        data-aos-duration="3000">
-                        <Pricing />
-                    </div>
-                </div>
-            </section> */}
-
-      {/* <section className="why-choose-us-section">
-        <div className="d-flex align-items-center flex-wrap">
-          <div className="half-section"></div>
-          <div className="half-section half-content-section">
-            <div className="d-flex flex-column justify-content-center h-100">
-              <SubText text="Why Choose Us" />
-              <h2 data-aos="fade-up" data-aos-duration="1000">
-                Embracing <span className="d-block">Sustainable Travel</span>
-              </h2>
-              <p data-aos="fade-up" data-aos-duration="1000">
-                Nostrum exercitationem ullam corporis suscipit laboriosam,
-                aliuid commodi consenuatur reprehenderit in voluptate velit
-                incididunt ut labore aet dolore magna.
-              </p>
-
-              <ProgressBarSection />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="testimonial-section" id="testimonials">
-        <div className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-sm-12 col-md-12 col-lg-6">
-              <SubText text="Testimonials" />
-              <h2 data-aos="fade-up" data-aos-duration="3000">
-                What Our Clients <span className="d-block">Say About Us</span>
-              </h2>
-              <p
-                className="description"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                Nostrum exercitationem ullam corporis suscipit laboriosam,
-                nisiaeruo aliuid commodi consenuatur reprehenderit in voluptate
-                velit esse cia incididunt ut labore aet dolore magna.
-              </p>
-            </div>
-            <div
-              className="col-sm-12 col-md-12 col-lg-6"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
-              <TestimonialSlider />
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="faq-section">
         <div className="container">
